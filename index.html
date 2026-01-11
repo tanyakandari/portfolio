@@ -1,35 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Tanya Kandari | Software Engineer</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <title>Tanya Kandari | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Tanya Kandari</h1>
-    <p>Backend / DevOps / ML Systems</p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Software engineer experienced in Django, Kubernetes, ML serving,
-      Terraform, and cloud-native systems.
-    </p>
-  </section>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <a href="#" class="tab active" data-tab="home">Home</a>
+        <a href="#" class="tab" data-tab="about">About</a>
+        <a href="#" class="tab" data-tab="projects">Projects</a>
+        <a href="#" class="tab" data-tab="contact">Contact</a>
+    </nav>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>ML Model Serving with MLServer on EKS</li>
-      <li>Istio Traffic Mirroring for Shadow Models</li>
-      <li>Django Admin CSV Export System</li>
-    </ul>
-  </section>
+    <div class="container">
 
-  <footer>
-    <p>© 2026 Tanya Kandari</p>
-  </footer>
+        <!-- HOME -->
+        <section id="home" class="active">
+            <div class="home-wrapper">
+                <div class="hello">Hello 👋</div>
+                <div class="name">
+                    I’m <span id="typed-name"></span>
+                </div>
+                <div class="tagline">
+                    First impressions don’t tell the whole story —
+                    but they decide whether the story gets read.
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="card about-card">
+                <h2>About Me</h2>
+                <p>
+                    I'm a software engineer with experience in backend development,
+                    cloud-native systems, DevOps, and ML model serving.
+                    I enjoy building scalable infrastructure and automated pipelines.
+                </p>
+
+                <h3>Skills & Expertise</h3>
+                <ul class="skills-list">
+                    <li>Python, Java, Django</li>
+                    <li>Cloud & DevOps: AWS, EKS, Istio, Terraform</li>
+                    <li>ML Model Serving & Deployment</li>
+                    <li>Database Systems: Cassandra, PostgreSQL</li>
+                </ul>
+
+                <h3>Experience Highlights</h3>
+                <div class="experience-list">
+
+                    <!-- Example Experience Item -->
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="role-company">
+                                <strong>Backend Developer</strong> | <span class="company">ABC Solutions</span> | <span
+                                    class="duration">Feb 2024 – Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="experience-details">
+                            - Deployed ML models on EKS using MLServer.<br>
+                            - Set up Istio traffic mirroring for shadow models.<br>
+                            - Implemented CI/CD pipelines for automated deployments.
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="role-company">
+                                <strong>Backend Developer</strong> | <span class="company">ABC Solutions</span> | <span
+                                    class="duration">Feb 2024 – Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="experience-details">
+                            - Developed Django admin CSV export system.<br>
+                            - Optimized backend database queries.<br>
+                            - Integrated unit tests and logging.
+                        </div>
+                    </div>
+
+                </div>
+                <!-- NEW: Education -->
+                <h3>Education</h3>
+
+                <div class="education-list">
+                    <span class="education-pill">
+                        🎓 B.Tech – Computer Science<br>
+                        <small>XYZ University · 2018 – 2022</small>
+                    </span>
+
+                    <span class="education-pill">
+                        🏫 Senior Secondary (Science)<br>
+                        <small>ABC School · 2016 – 2018</small>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <div class="card">
+                • ML Model Serving on EKS using MLServer<br>
+                • Istio Traffic Mirroring for Shadow Models<br>
+                • Django Admin CSV Export System
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="contact-wrapper">
+                <div class="card contact-card">
+                    <div class="contact-header">
+                        <img src="assets/profile.png" alt="Tanya Kandari" class="avatar">
+                        <div>
+                            <h3>Tanya Kandari</h3>
+                            <p class="contact-subtitle">Software Engineer</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon">📧</span>
+                        <span>tanya96kandari@gmail.com</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon">💻</span>
+                        <a href="https://github.com/tanyakandari" target="_blank">github.com/tanyakandari</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon">🔗</span>
+                        <a href="https://linkedin.com/in/tanya-kandari-81b3b299"
+                            target="_blank">linkedin.com/in/tanya-kandari-81b3b299</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="icon">📍</span>
+                        <span>India</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script>
+        /* Typing animation */
+        const nameText = "Tanya Kandari";
+        const target = document.getElementById("typed-name");
+        const nameContainer = document.querySelector(".name");
+        let index = 0;
+
+        function typeLetter() {
+            if (index < nameText.length) {
+                target.textContent += nameText.charAt(index++);
+                setTimeout(typeLetter, 120);
+            } else {
+                nameContainer.classList.add("underline-active");
+            }
+        }
+        setTimeout(typeLetter, 300);
+
+        /* Tabs logic with localStorage */
+        const tabs = document.querySelectorAll(".tab");
+        const sections = document.querySelectorAll("section");
+
+        function showTab(tabName) {
+            tabs.forEach(t => t.classList.remove("active"));
+            sections.forEach(s => s.classList.remove("active"));
+
+            const activeTab = document.querySelector(`.tab[data-tab="${tabName}"]`);
+            const activeSection = document.getElementById(tabName);
+
+            if (activeTab && activeSection) {
+                activeTab.classList.add("active");
+                activeSection.classList.add("active");
+            }
+
+            // Save active tab in localStorage
+            localStorage.setItem("activeTab", tabName);
+        }
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", e => {
+                e.preventDefault();
+                const tabName = tab.dataset.tab;
+                showTab(tabName);
+            });
+        });
+
+        // On page load, check localStorage
+        const savedTab = localStorage.getItem("activeTab") || "home";
+        showTab(savedTab);
+    </script>
+
+
 </body>
+
 </html>
