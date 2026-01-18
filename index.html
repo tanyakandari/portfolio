@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <title>Tanya Kandari | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -24,33 +26,112 @@
             <div class="home-wrapper">
                 <div class="hello">Hello 👋</div>
                 <div class="name">
+                    <div class="home-meme">
+                        <img src="assets/memoji.png" alt="Tanya Meme" />
+                    </div>
                     I’m <span id="typed-name"></span>
                 </div>
                 <div class="tagline">
-                    First impressions don’t tell the whole story —
-                    but they decide whether the story gets read.
+                    Turning machine learning models into deployable solutions
+                </div>
+                <div class="home-contacts">
+                    <a href="mailto:tanya96kandari@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <a href="https://github.com/tanyakandari" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/tanya-kandari-81b3b299" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="marquee-wrapper">
+                    <div class="marquee">
+                        <span>ML Engineer</span>
+                        <span>MLflow</span>
+                        <span>Python</span>
+                        <span>Full-Stack Development</span>
+                        <span>Problem Solver</span>
+                        <span>Dancer 💃</span>
+                        <span>Travel Enthusiast ✈️</span>
+                        <span>Foodie 🍕</span>
+                    </div>
                 </div>
             </div>
+
         </section>
 
         <!-- ABOUT -->
         <section id="about">
             <div class="card about-card">
                 <h2>About Me</h2>
-                <p>
-                    I'm a software engineer with experience in backend development,
-                    cloud-native systems, DevOps, and ML model serving.
-                    I enjoy building scalable infrastructure and automated pipelines.
+                <p class="about-text">
+                    I’m a problem-solver at heart, driven by curiosity and a passion for building impactful solutions to
+                    complex problems.
+                    I value clean architecture, efficient code, and thoughtful documentation—because great software
+                    should be both powerful and easy to maintain.
                 </p>
 
-                <h3>Skills & Expertise</h3>
-                <ul class="skills-list">
-                    <li>Python, Java, Django</li>
-                    <li>Cloud & DevOps: AWS, EKS, Istio, Terraform</li>
-                    <li>ML Model Serving & Deployment</li>
-                    <li>Database Systems: Cassandra, PostgreSQL</li>
-                </ul>
-
+                <p class="about-text">
+                    I thrive in collaborative environments and bring strong communication and interpersonal skills to
+                    every team I work with.
+                    Whether working independently or alongside others, I stay highly motivated, deadline-driven, and
+                    focused on delivering high-quality results.
+                </p>
+                <h2>Skills & Expertise</h2>
+                <div class="skills-box">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-list">
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Machine Learning & Data</h3>
+                        <div class="skill-list">
+                            <span class="skill-pill">Machine Learning</span>
+                            <span class="skill-pill">Deep Learning</span>
+                            <span class="skill-pill">Feature Engineering</span>
+                            <span class="skill-pill">Model Deployment</span>
+                            <span class="skill-pill">Model Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-list">
+                            <span class="skill-pill">TensorFlow</span>
+                            <span class="skill-pill">PyTorch</span>
+                            <span class="skill-pill">Scikit-learn</span>
+                            <span class="skill-pill">Django</span>
+                            <span class="skill-pill">FastAPI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Data & Infrastructure</h3>
+                        <div class="skill-list">
+                            <span class="skill-pill">Docker</span>
+                            <span class="skill-pill">Kubernetes</span>
+                            <span class="skill-pill">AWS</span>
+                            <span class="skill-pill">MLflow</span>
+                            <span class="skill-pill">CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Practices</h3>
+                        <div class="skill-list">
+                            <span class="skill-pill">Git & GitHub</span>
+                            <span class="skill-pill">Linux</span>
+                            <span class="skill-pill">REST APIs</span>
+                            <span class="skill-pill">System Design</span>
+                            <span class="skill-pill">Agile</span>
+                        </div>
+                    </div>
+                </div>
                 <h3>Experience Highlights</h3>
                 <div class="experience-list">
 
@@ -58,28 +139,80 @@
                     <div class="experience-item">
                         <div class="experience-header">
                             <div class="role-company">
-                                <strong>Backend Developer</strong> | <span class="company">ABC Solutions</span> | <span
-                                    class="duration">Feb 2024 – Dec 2024</span>
+                                <strong>Associate</strong> | <span class="company">JP Morgan Chase</span> | <span
+                                    class="duration">October 2023 – Present</span>
                             </div>
                         </div>
                         <div class="experience-details">
-                            - Deployed ML models on EKS using MLServer.<br>
-                            - Set up Istio traffic mirroring for shadow models.<br>
-                            - Implemented CI/CD pipelines for automated deployments.
+                            <ul>
+                                <li>Deployed ML models on EKS using MLServer.</li>
+                                <li>Set up Istio traffic mirroring for shadow models.</li>
+                                <li>Implemented CI/CD pipelines for automated deployments.</li>
+                            </ul>
                         </div>
                     </div>
 
                     <div class="experience-item">
                         <div class="experience-header">
                             <div class="role-company">
-                                <strong>Backend Developer</strong> | <span class="company">ABC Solutions</span> | <span
-                                    class="duration">Feb 2024 – Dec 2024</span>
+                                <strong>Senior Python Developer</strong> | <span class="company">App Boxer Dev Private
+                                    Limited</span> | <span class="duration">April 2022 – September 2023</span>
                             </div>
                         </div>
                         <div class="experience-details">
-                            - Developed Django admin CSV export system.<br>
-                            - Optimized backend database queries.<br>
-                            - Integrated unit tests and logging.
+                            <ul>
+                                <li>Managed teams of Python developers and collaborated with other departments to ensure seamless integration between the backend and frontend systems.</li>
+                                <li>Performed PR (Pull Request) reviews for Backend, Python (Django), ensuring that the code being merged into the codebase meets the highest quality standards.</li>
+                                <li>Took stand-ups to ensure that the team is aligned and working towards common goals.</li>
+                                <li>Created scalable and maintainable systems that meet the needs of both the business and the end-users.</li>
+                                <li>Developed robust and secure applications, leveraging the power of Django, Stripe, Django Channels, Firebase, AWS services such as SNS, S3, and SES.</li>
+                                <li>Developed real-time applications such as chatbots, dynamic links, and push notifications.</li>
+                                <li>Designed and implemented complex logic in Python and performed CRUD operations on databases.</li>
+                                <li>Used Docker to containerize web applications and their dependencies, 
+                                    creating portable applications that can be easily deployed to various environments without manual configuration.</li>
+                                <li>Designed and developed boilerplate templates for applications.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="role-company">
+                                <strong>Full Stack Developer</strong> | <span class="company">Agrichain Pvt Ltd</span> |
+                                <span class="duration">March 2020 - April 2022</span>
+                            </div>
+                        </div>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Implemented RESTful AIs for web application using Django. AIs have included features such as user authentication, database connection, and data retrieval.</li>
+                                <li>Using ReactJS, created user interfaces that are intuitive, responsive, and provides an optimal user experience.</li>
+                                <li>Created unit test cases using pytest. 
+                                    These test cases have included testing features such as database connections and API endpoints.</li>
+                                <li>Used Docker to containerise web application and it's dependencies. Creating a portable application that can 
+                                    be easily deployed to various environments without the need for manual configuration.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <div class="role-company">
+                                <strong>Full-Stack Developer</strong> | <span class="company">Servion Global
+                                    Solutions</span> | <span class="duration">June 2018 - February 2020</span>
+                            </div>
+                        </div>
+                        <div class="experience-details">
+                            <ul>
+                                <li>Developed RESTful APis for various web applications using Spring Boot. These APIs
+                                included features such as user authentication, database connection, and data retrieval.</li>
+                                <li>Designed and developed Ul for web applications using Angular 6. Using Angular's
+                                built-in directives and components, created dynamic and responsive user interfaces
+                                that provide an optimal user experience.</li>
+                                <li>Integrated SSO technology into web applications to provide a seamless and secure
+                                user experience. Implemented various authentication protocols such as OAuth2
+                                and SAML.</li>
+                                <li>Developed MSI installers for software products ensuring that the installation
+                                process is seamless and easy for the end-users</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -90,12 +223,12 @@
                 <div class="education-list">
                     <span class="education-pill">
                         🎓 B.Tech – Computer Science<br>
-                        <small>XYZ University · 2018 – 2022</small>
+                        <small>Amity University · 2014 – 2018</small>
                     </span>
 
                     <span class="education-pill">
                         🏫 Senior Secondary (Science)<br>
-                        <small>ABC School · 2016 – 2018</small>
+                        <small>Vishwa Bharati School · 2013 – 2014</small>
                     </span>
                 </div>
             </div>
@@ -147,59 +280,7 @@
             </div>
         </section>
     </div>
-
-
-    <script>
-        /* Typing animation */
-        const nameText = "Tanya Kandari";
-        const target = document.getElementById("typed-name");
-        const nameContainer = document.querySelector(".name");
-        let index = 0;
-
-        function typeLetter() {
-            if (index < nameText.length) {
-                target.textContent += nameText.charAt(index++);
-                setTimeout(typeLetter, 120);
-            } else {
-                nameContainer.classList.add("underline-active");
-            }
-        }
-        setTimeout(typeLetter, 300);
-
-        /* Tabs logic with localStorage */
-        const tabs = document.querySelectorAll(".tab");
-        const sections = document.querySelectorAll("section");
-
-        function showTab(tabName) {
-            tabs.forEach(t => t.classList.remove("active"));
-            sections.forEach(s => s.classList.remove("active"));
-
-            const activeTab = document.querySelector(`.tab[data-tab="${tabName}"]`);
-            const activeSection = document.getElementById(tabName);
-
-            if (activeTab && activeSection) {
-                activeTab.classList.add("active");
-                activeSection.classList.add("active");
-            }
-
-            // Save active tab in localStorage
-            localStorage.setItem("activeTab", tabName);
-        }
-
-        tabs.forEach(tab => {
-            tab.addEventListener("click", e => {
-                e.preventDefault();
-                const tabName = tab.dataset.tab;
-                showTab(tabName);
-            });
-        });
-
-        // On page load, check localStorage
-        const savedTab = localStorage.getItem("activeTab") || "home";
-        showTab(savedTab);
-    </script>
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
